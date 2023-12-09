@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Astuces d'apprentissage</title>
+
+        <!--UTF-8 est la norme d'encodage pour représenter les différentes langues, la plus utilisée-->
+         <!--meta est une balise clandistine donc fonctionne seule-->
+        <meta charset="UTF-8">
+
+         <!-- relier la page avec le fichier css -->
+         <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!--intégrer un fichier js dans HTML-->
+         <script type="text/javascript" src="JS/java.js"></script>
+
+         <!-- description pour le référencement<header> -->
+         <meta name="description" content="aide pour l'apprentissage des leçons et des diverse méthodes pour apprendre à apprendre, méthodologie pédagogique">
+
+          <!-- rajouter un petit icon en haut à gauche <header> -->
+         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+            <!-- importer des polices d'écriture de google font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- voici l'en-tête pour la page <header> -->
+        <header>
+
+            <!--<div> Ne fait rien, mais on peut emboîter des choses et y en ajouter-->
+            <div class="titre_box">
+
+                <!-- voici le Titre pour la page -->
+                <h1>Astuces d'apprentissage</h1>
+
+                <!-- voici le slogan pour la page -->
+                <p>Apprendre tout en douceur et en toute tranquillité.</p>
+            </div>
+
+            
+            <!-- div de mon slider d'images afin de récupere seulement cette partie pour le styliser -->
+            <div class="slider">
+
+                <!-- deiv des slides d'images -->
+              <div class="slides">
+
+                    <!-- mes images avec une div pour les séparer et la balise <img, src="" alt=""> -->
+                  <div class="slide"><img src="images\maths.jpg" alt="pythagore"></div>
+                  <div class="slide"><img src="images\map.jpg" alt="Les Méthodes de Travail"></div>
+                  <div class="slide"><img src="images\plan.jpg" alt="Les plans A_B_C"></div>
+                  <div class="slide"><img src="images\feu.jpg" alt="Le feu tricolre en smileys"></div>
+
+              </div>
+
+          </div>
+
+        </header>
+
+            <div class="section-menu">
+
+        <!--créer un menu de navigation-->
+            <nav class="menu">
+             <!--liste à puces-->
+                <ul>
+                    <li class ="nav-item accueil"><a href="index.html">Page<br>d'Accueil</a></li>
+                    <li class ="nav-item carte"><a href="carte.html">Carte<br>Mentale</a></li>
+                    <li class ="nav-item méthodes"><a href="Methodes.html">Méthodes <br>de Travail</a></li>
+                    <li class ="nav-item mécanismes"><a href="Cerveau.html">Notre<br>Cerveau</a></li>
+                </ul>
+            </nav>
+            </div>
+            
+        <main>
+        <section id="pratique">
+            <div class ="partie_blanche">
+            <!-- présentation d'une stratégie de résolution d'exo-->
+            <h2>Exemple Pratique avec un exercice  de mathématiques</h2>
+            
+             <h3>Calculer la durée d'un trajet en fonction de la vitesse utilisée par une voiture sur l'autoroute ?</h3>
+                <br>
+                <p class="aide">
+                    Sachant qu'une vitesse de 100 km/h signifie que l'on parcourt 100 km en une heure.
+                    <br>
+                    (On imagine que la vitesse est constante et ne varie pas en fonction du temps: c'est donc un mouvement uniforme.)
+                </p>
+                    <br>
+                <p>
+                    En combien de temps allons-nous parcourir 100 km si la vitesse est de 130 km/h?
+
+                </p>
+            </div>
+            <br>
+
+            <div class ="partie_blanche">   
+                
+                <h4>Première étape :</h4>
+
+                    <ol class=" liste_etapes">
+                        <li>Lire <b>une première fois</b> afin de déchiffrer les mots,</li>
+                        <li><b>Une deuxième fois</b> pour repérer les mots clés(importants),</li>
+                        <li><b>Une troisième fois</b> pour vérifier que l'on a compris le sens.</li>
+                    </ol>
+                     <br><br>
+
+                <p>
+                    Sachant qu'une <b>vitesse de 100 km/h</b> signifie que l'on parcourt <b>100 km en une heure</b>.
+                    <br>
+                    (On imagine que la <b>vitesse est constante</b> et <b>ne varie pas</b> en fonction du temps: c'est donc un mouvement uniforme.)
+                </p>
+                    <br>  
+
+                <p class="aide">
+                    100 km/h = 100 km &rarr; 1 h 
+                </p>
+                    <br>
+                <p>
+                    En <b>combien de temps</b> allons-nous parcourir <b>100 km</b> si la vitesse est de <b>130 km/h</b>?
+                </p>
+                <br><br>
+
+                <p class="aide">   
+                    Donc je dois trouver la durée en heure pour faire 100 km en roulant à 130 km/h.     
+                </p>
+            </div>            
+            <br>
+
+            <div  class ="partie_blanche"> 
+                
+                <!--Un tableau de proportionnalité ou schéma-->
+                
+                <h4>Deuxième étape :</h4>
+                <p class="tech">
+                    <br><br>
+                    Réunir les informations importante sous la forme <strong>un schéma</strong> ou <strong>un tableau</strong> pour faciliter le raisonnement.
+                </p>
+                    <br>
+
+                <p>
+                    <b>100 km/h = 100 km &rarr; 1 h
+                    <br>
+                     130 km/h = 100 km &rarr; ??? </b> 
+                </p>
+                <br><br>
+
+                    <table border="1" class="tableau_maths">
+                        <!--<tr> définit une ligne de cellules dans le tableau-->
+                        <tr>
+                            <!--titre du tableau à gauche avec <caption>-->
+                            <caption style="text-align: left"><b>Relation vitesse et distance pour 100 km:</b></caption>
+                        <tr>  
+                         <!--<th> ce sont les cellules d'en-tête-->
+                        <th>Vitesse en km/h</th>
+                        <th>Durée en h</th>
+                        <th>Durée en min</th>
+                        </tr>
+                           <!--<td>les données dans les cellules-->
+                            <td>100 km/h</td>
+                            <td>1 h</td>
+                            <td>60 min</td>
+                        </tr>
+                        <tr>
+                            <td>130 km/h</td>
+                            <td>???</td>
+                            <td>???</td>
+                         </tr>
+                        
+                   </table>
+                </div>
+            <br>
+
+            <div class ="partie_blanche">
+
+                <h4>Troisième étape :</h4>
+                <p class="tech">
+                 <br><br>
+                Résolution de l'exercice en gardant <strong>un oeil critique</strong>.
+                </p>
+                <br><br>
+
+                <p>
+                    <b>1) Soit on raisonne <strong>sans connaître les formules</strong> vitesse, distance et temps :
+                    <br><br>
+                    100 km/h = 100 km &rarr; 1 h
+                    <br>
+                    130 km/h = 100 km &rarr; ??? </b> 
+                </p>
+                <br>
+                <p class="aide"> Pour avoir un raisonnement mathématiques, on remplace les ??? par un <b>&#119909</b>.  
+                <br>
+                On utilise le produit en croix.
+                </p>
+                <br>
+
+                <p>
+                <b>(&#119909; x 100) = (1 x 130)</b> donc cela revient à faire  <b>&#119909; = (1 x 130) &#247; 100 </b>
+                    <br>
+                <b>&#119909; &#8776; 0,7692307692...</b> soit en arrondissant <b>&#119909; &#8776; 0,77 h</b>
+                <br><br>
+                </p>
+
+                <p class="aide">
+                    Pour connaitre le résultat en minutes, on sait que 1 h = 60 min, donc :
+                </p>
+                    <br>
+                <p>
+                    <b>0,77 x 60 = 46.2 min</b> environ car <i><b>&#119909;</b> est une valeur arrondie</i>.
+                </p>
+                <br><br>
+                <p>
+                    <b>2) Ou bien, on raisonne avec le <strong>tableau de proportionnalité</strong> :</b>
+                </p>
+
+                    <br>
+                    <table border="1" class="tableau_maths">
+                        <!--<tr> définit une ligne de cellules dans le tableau-->
+                        <tr>
+                            <!--titre du tableau à gauche avec <caption>-->
+                            <caption style="text-align: left"><b>Relation vitesse et distance pour 100 km:</b></caption>
+                        <tr>  
+                         <!--<th> ce sont les cellules d'en-tête-->
+                        <th>Vitesse en km/h</th>
+                        <th>Durée en h</th>
+                        <th>Durée en min</th>
+                        <th>coefficient qui relie la vitesse à la durée</th>
+                        </tr>
+                           <!--<td>les données dans les cellules-->
+                            <td>100 km/h</td>
+                            <td>1 h</td>
+                            <td>60 min</td>
+                            <td>130 &#247; 100 = 1.3  vers le haut on divise par 1,3</td>
+                        </tr>
+                        <tr>
+                            <td>130 km/h</td>
+                            <td>1 x 0.77 = 0.77 h</td>
+                            <td>60 x 0.77 = 46,2 min </td>
+                            <td>130 &#247; 100 = 1.3 vers le bas on multiplie par 1,3</td>
+                         </tr>
+                        
+                   </table>
+                    <br><br>
+                <p>
+                    <b>3&#x29; On connait <strong>les formules</strong> liées à la vitesse : </b>
+                    <br><br>
+                </p>
+                <p class="aide"> 
+                 <b>le temps = la distance &#247; la vitesse </b> 
+                    <br>
+                    la vitesse = la distance &#247; le temps
+                    <br>
+                    la distance = le temps x la vitesse
+                    <br><br>
+                <p>
+                    la durée = ???<br>
+                    la vitesse = 130 km/h <br>
+                    la distance = 100 km <br>
+                <strong> &rArr; t = d &#247; v</strong>
+                </p>
+                </p> 
+                <br>
+                <p>
+                  
+                    &rArr; 100 &#247; 130 ; &#8776; 0,7692307692...</b> soit en arrondissant <b>&#119909; &#8776; 0,77 h</b>
+                    <br>
+                    0,77 x 60 = <b>46.2 min</b> environ car <i><b>&#119909;</b> est une valeur arrondie</i>.
+
+                </p>
+                    <br><br>
+                <p class = "aide">
+                    En toute logique, lorsqu'on roule à 130 km/h, la vitesse est plus importante qu'à 100 km/h. <br>
+                
+                    Donc on mettra moins de temps pour réaliser le même trajet.<br>
+                
+                    Donc à 100 km/h la durée &#60; à 130 km/h !
+                </p>
+                <br>
+
+            </div>
+            <br>
+            <div class ="partie_blanche">
+
+                <h4>Quatrième étape :</h4>
+                <br>
+                <p class="tech">
+                <strong>Ecrire une phrase réponse</strong> en reprenant les éléments de la question.
+                </p>
+                <br>
+                <p>
+                    &rArr;   En combien de temps allons-nous parcourir 100 km si la vitesse est de 130 km/h? 
+                </p> 
+                <br>
+                <p> 
+                    <b>Il nous faudra environ 0,77h (ou 46,2) afin de parcourir 100 km avec une vitesse de 130 km/h.</b>
+                </p>
+                <br><br> 
+
+                  <p>
+                    &rArr; <i>Pour conclure, faire des excès de vitesse sur l'autoroute ne fait pas gagner beaucoup de temps de trajet.</i>
+                <br><br>
+                <b>Puisque que pour un trajet de 100 km,</b>
+                <br>
+                Si on roule a 100 km/h on mettra 1h (60 min).
+                <br>
+                Si on roule a 130 km/h on mettra 46.2 min.
+                <br>
+                On obtiendra une différence de <b>13,8 min</b> (60 - 46.2 = 13.8).
+                </p>
+            </div>
+            <br>
+
+            <div class ="partie_blanche">
+
+            <h4>Vous pouvez vous entrainer sur cette exercice en modifant les valeurs et vérifier vos résultats :</h4> 
+            <br>
+            <form>
+                <div class="form-section">
+                <label for="Km">Km</label>
+                <br>
+                <input type="number" id="Km" value="100">
+                <br><br>
+                </div>
+                <div class="form-section">
+                <label for="vitesse">Vitesse en km/h</label>
+                <br>
+                <input type="number" id="vitesse" value="100">
+                </div>
+                <br><br>
+                <div class="form-section">
+                    <!--ajouter un bouton "Résultat" pour afficher les durées  + id="Résultats" afin de pouvoir modifer le style du bouton-->
+                    <input type="button" value="Résultat" id="resultBtn">
+                            <!-- relier la page avec le fichier js -->
+
+                </div>
+
+            </form>
+            </div>
+        </section>
+        <aside>
+            <p> en bas à droite</p>
+        </aside>
+        </main>   
+
+         <!-- voici le pied pour la page <footer> -->
+        <footer>
+            &copy; Copyright Rios Marilyne, 2023
+        </footer>
+    </body>
+
+</html>

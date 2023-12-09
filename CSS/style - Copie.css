@@ -1,0 +1,396 @@
+
+/*pour agir sur toute la page*/
+*{
+   padding: 0%;
+   margin: 0 auto;
+  
+}
+body {
+    /* couleur de fond du corps de page*/
+    background-color: #ECF7FD;
+    /* couleur du text de la page*/
+    color:black;
+
+
+}
+
+
+header {
+  
+     /* créer une boite*/
+    display: flex;
+     /* mettre en colonne*/
+    flex-direction: row;
+     /* pour centrer les éléments verticalement*/
+    justify-content: center;
+    /* pour centrer les éléments horizontalement*/
+    align-items: center;
+    width: 100%;
+}
+
+
+div.titre_box {
+
+    /* couleur de fond de la boite*/
+    background-color: #FFFFFF;
+
+    /* aligner le texte au centre*/
+    text-align: center;
+
+    /* changer la police d'écriture avec google-font (copier du site)*/
+    font-family: 'DynaPuff', cursive;
+
+    /* positionner le titre sur le slide pour passer devant*/
+    position:absolute;
+
+    /* positionner le titre devant avec un z index donc définir le positionnement et la priorité*/
+    z-index: 999;
+
+    /* styliser la boite du titre: "padding" = marge en interne alors que "margin"= une marge autour */
+    padding : 20px;
+    margin: 0 auto;
+
+    /* ajuster l'espace entre les lignes*/
+    line-height: 30px;
+
+    font-family: 'DynaPuff', cursive;
+
+    /*rajouter une ombre*/
+    box-shadow: 12px 12px 2px 1px;
+}
+
+header h1{
+    font-size: 30px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+
+/* Le slider*/
+.slider {
+    /* overflow :gérer les déplacements du contenu d'un élément*/
+    /*hidden :Le contenu est rogné si besoin + aucune barre de défilement n'est affichée.*/  
+   overflow: hidden;
+   margin: auto;
+}
+
+.slides {
+    /* Affichage en flex, par défaut c'est en ligne*/
+    display: flex;
+    /* Afficher en ligne*/
+    flex-direction: row;
+    /* Propriété animation*/
+    animation: glisse 30s infinite ease;
+    /* largeur des slides*/
+    width: 1250px;
+    height: 300px;
+}
+
+.slide {
+    opacity: 0.85;
+}
+
+/* Pour l'animation, on utilise le pack @keyframes sue l'on nomme :"glisse"*/
+@keyframes glisse {
+    /* Permet de dire où regarder et donc de définir les différents état de l'animation*/
+    0%{
+        transform: translateX(0px);
+    }
+    33%{
+        transform: translateX(-300px);
+    }
+    66%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+/*navigation menu*/
+.section-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul{
+    padding: 20px;
+}
+
+.menu ul li{
+    /* retirer les puces de la class="menu"*/
+    list-style-type: none;
+    /* mettre en ligne*/
+    display: inline-block;
+    flex:1;
+    transition: 0.3s all; 
+}
+
+/*mettre une image sur chaque bouton*/
+.accueil {
+    background: url(../images/0_nav.jpg) 100%; 
+}
+.carte {
+    background: url(../images/0_nav.jpg)100%; 
+}
+.méthodes {
+    background: url(../images/0_nav.jpg)100%;
+}
+.mécanismes {
+    background: url(../images/0_nav.jpg)100%;  
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'DynaPuff', cursive;
+}
+
+/*Animation quand la souris passe sur le lien*/
+.menu ul li:hover{
+    transform: scale(1.5);
+    transition: 0.3s all;
+}
+.nav-item {
+  
+   height: 50px;
+   padding: 20px;
+   box-shadow: 12px 12px 2px 1px;
+}
+
+
+
+/*Partie présentation du site*/
+#intro {
+    background-color: white;
+    /*: "padding" = marge en interne alors que "margin"= une marge autour */
+    padding: 20px;
+    margin: 0 auto;
+
+    font-size: 18px;
+
+    /* aligner le texte au centre*/
+    text-align: center;
+    line-height: 25px;
+
+    /* changer la police d'écriture avec google-font (copier du site)*/
+    font-family: 'Arial','Times New Roman', Times, serif;
+}
+
+
+footer {
+    /* couleur de fond du pied de page*/
+    background-color: #18ebebab;
+    /* pour centrer le texte*/
+    text-align: center;
+    /*taille écriture*/
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+h3{
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+}
+
+h4{
+    color:blue;
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+    text-decoration: underline 2px;
+    font-size: 20px;
+}
+strong{
+    color: black;
+    font-family: 'DynaPuff', cursive;
+}
+
+/* page carte*/
+#carte{
+    background-color: white;
+    /*: "padding" = marge en interne alors que "margin"= une marge autour */
+    padding: 20px;
+    margin: 0 auto;
+
+    font-size: 18px;
+
+    /* aligner le texte au centre*/
+    text-align: center;
+    line-height: 25px;
+
+    /* changer la police d'écriture avec google-font (copier du site)*/
+    font-family: 'Arial','Times New Roman', Times, serif;
+}
+
+/*page carte mentale*/
+#carte{
+    align-items: center;
+    text-align: center;
+}
+
+.item{
+    display: flex; 
+    text-align: center; 
+}
+
+.description{
+    padding: 10px;
+}
+
+div.carte-1{
+    padding: 10px; 
+ 
+}
+
+.carte-1 img{
+    width: 400px;
+}
+
+
+/*page Methodes*/
+#méthodes{
+    background-color: white;
+    /*: "padding" = marge en interne alors que "margin"= une marge autour */
+    padding: 20px;
+    margin: 0 auto;
+
+    font-size: 18px;
+
+    /* aligner le texte au centre*/
+    text-align: center;
+    line-height: 25px;
+
+    /* changer la police d'écriture avec google-font (copier du site)*/
+    font-family: 'Arial','Times New Roman', Times, serif;
+}
+
+/*page Cerveau*/
+
+#cerveau  {
+    background-color: white;
+    /*: "padding" = marge en interne alors que "margin"= une marge autour */
+    padding: 20px;
+    margin: 0 auto;
+
+    font-size: 18px;
+
+    /* aligner le texte au centre*/
+    text-align: center;
+    line-height: 25px;
+
+    /* changer la police d'écriture avec google-font (copier du site)*/
+    font-family: 'Arial','Times New Roman', Times, serif;
+}
+
+/*page exercice_maths*/
+#exercice_maths{
+ 
+    /*: "padding" = marge en interne alors que "margin"= une marge autour */
+    padding: 20px;
+    margin: 0 auto;
+
+    font-size: 18px;
+
+    /* aligner le texte au centre*/
+    text-align: center;
+    line-height: 25px;
+
+    /* changer la police d'écriture avec google-font (copier du site)*/
+    font-family: 'Arial','Times New Roman', Times, serif;
+
+    align-items: center;
+
+}
+
+.étape_blanche{
+    background-color: #FFFFFF;
+    /*: "padding" = marge en interne alors que "margin"= une marge autour */
+    padding: 60px;
+    margin: 15px;
+
+    font-size: 18px;
+
+    /* aligner le texte au centre*/
+    text-align: center;
+    line-height: 25px;
+
+    /* changer la police d'écriture avec google-font (copier du site)*/
+    font-family: 'Arial','Times New Roman', Times, serif;
+    /*pour jutifer le text et avoir un rendu uniforme*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aide{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+
+}
+.tech{
+    color: blue;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+}
+.liste_etapes{
+     /* retirer les puces de la class="etapes"*/
+     list-style-position: inside;
+     font-weight: bold;
+     color: blue;
+     text-align: center;
+    
+
+}
+
+/*style tableau maths*/
+.tableau_maths{
+    text-align: center;
+    /*Définissez la propriété border-collapse du tableau sur repli, pour unifier les bordures*/
+    border-collapse: collapse;
+    margin: auto;
+}
+       /* la bordure des cellules td et th soit noire, 1px de large, de style solide + padding 10px à toutes les cellules,*/
+       td, th {
+   
+           border: 1px solid black;
+           padding: 10px;
+           font-weight: bold;
+           background-color: white;
+          }
+       /*ux cellules d'en-tête (=th): #2493df pour la couleur d'arrière-plan et blanc pour le texte.*/
+       th{
+           background-color: blue;
+           color: white;
+           
+       }
+/*maths_training"*/
+label{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    padding-left: 10px;
+    line-height: 1.5;
+}
+input{
+    border-radius: 15px;
+    border: 2px solid rgb(54, 53, 53);
+    font-size: 18px;
+    line-height: 2;
+    outline: none;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    width: 80px;
+}

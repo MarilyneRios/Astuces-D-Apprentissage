@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Astuces d'apprentissage</title>
+
+        <!--UTF-8 est la norme d'encodage pour représenter les différentes langues, la plus utilisée-->
+         <!--meta est une balise clandistine donc fonctionne seule-->
+        <meta charset="UTF-8">
+
+         <!-- relier la page avec le fichier css -->
+         <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+         <!-- description pour le référencement<header> -->
+         <meta name="description" content="aide pour l'apprentissage des leçons et des diverse méthodes pour apprendre à apprendre, méthodologie pédagogique">
+
+         <!--pour adaptation mobile-->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+          <!-- rajouter un petit icon en haut à gauche <header> -->
+         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+            <!-- importer des polices d'écriture de google font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- voici l'en-tête pour la page <header> -->
+        <header>
+
+            <!--<div> Ne fait rien, mais on peut emboîter des choses et y en ajouter-->
+            <div class="titre_box">
+
+                <!-- voici le Titre pour la page -->
+                <h1>Astuces d'apprentissage</h1>
+
+                <!-- voici le slogan pour la page -->
+                <p>Apprendre tout en douceur et en toute tranquillité.</p>
+            </div>
+
+            
+            <!-- div de mon slider d'images afin de récupere seulement cette partie pour le styliser -->
+            <div class="slider">
+
+                <!-- deiv des slides d'images -->
+              <div class="slides">
+
+                    <!-- mes images avec une div pour les séparer et la balise <img, src="" alt=""> -->
+                  <div class="slide"><img src="images\maths.jpg" alt="pythagore"></div>
+                  <div class="slide"><img src="images\map.jpg" alt="Les Méthodes de Travail"></div>
+                  <div class="slide"><img src="images\plan.jpg" alt="Les plans A_B_C"></div>
+                  <div class="slide"><img src="images\feu.jpg" alt="Le feu tricolre en smileys"></div>
+
+              </div>
+
+          </div>
+
+        </header>
+
+            <div class="section-menu">
+
+        <!--créer un menu de navigation-->
+            <nav class="menu">
+             <!--liste à puces-->
+                <ul>
+                    <li class ="nav-item accueil"><a href="index.html">Page<br>d'Accueil</a></li>
+                    <li class ="nav-item carte"><a href="carte.html">Carte<br>Mentale</a></li>
+                    <li class ="nav-item méthodes"><a href="Methodes.html">Méthodes <br>de Travail</a></li>
+                    <li class ="nav-item mécanismes"><a href="Cerveau.html">Notre<br>Cerveau</a></li>
+                    <li class ="nav-item mécanismes"><a href="Autres_Astuces.html">Autres<br>Astuces </a></li>
+                </ul>
+            </nav>
+            </div>
+
+        <!--partie principale avec le contenu important du site-->    
+        <main>
+           
+            <section class="leçons">
+                 <div class ="partie_blanche">
+                    <!-- présentation du cerveau-->
+                   <h3>Comment fonctionne notre cerveau pour les apprentissages ?</h3>
+
+                     <div class="illustration">
+
+                        <!--image d'un cerveau de https://pixabay.com/fr/illustrations/cerveau-mal-de-t%C3%AAte-%C3%A9lectrique-1845962/-->
+                        <img src="images/cerveau.jpg" alt="image d'un cerveau avec une activation électrique, Image par Pete Linforth de Pixabay" name="cerveau" id="cerveau">
+                     </div>
+
+                     <div class="texte">
+                        <h4>Le cerveau est l’organe principal du système nerveux.</h4>
+
+                    <p> Il faut savoir que notre cerveau peut traiter entre 5000 et 6000 décisions de la vie quotidienne par jour par exemple:
+                        <br>dois-je faire la vaisselle maintenant ? Dois-je mettre un pull ?
+                    </p>
+                        
+                    <p>Une partie de ces décisions sont prises de manière automatique. Ainsi quelquefois, notre cerveau fonctionne en mode automatique.</p>
+                    
+                    <p><b>Notre cerveau est plus ou moins autonome</b>, ce qui a permet de gérer beaucoup de situations.
+                        <b> Un danger peut mettre notre cerveau en situation de stress et venir le perturber.</b> 
+                        Par exemple, lorsqu'un élève se lève pour aller écrire au tableau, cela peut lui faire perdre ses moyens. 
+                        Il faut donc apprendre à gérer ce stress.
+                    </p>
+                        
+                     <p>A savoir, qu’un cerveau <b>traite les informations perçues par des récepteurs sensoriels</b> (les yeux, les oreilles, la peau, le nez...).
+                        Cela fait beaucoup d'informations en même temps.
+                    </p>
+                     </div>
+                     <div class="séparation"></div>
+                 </div>    
+                     
+               
+
+                 <div class ="partie_blanche">
+                    <h4>Le stress face à une épreuve</h4>
+                    <div class="illustration">
+                        <img src="images/homme_stressé.png" alt="un homme qui se tient la tête, Image par Mohamed Hassan de Pixabay" name="homme_stressé" id="homme_stressé">
+                    </div>
+                    <div class="texte">
+                        <p>Le cerveau <b>ne fait pas la différence entre un souvenir réel et un souvenir imaginé</b>. Donc, il fonctionne souvent à nos dépens.
+                            Ainsi un élève qui s’imagine ou rêve, que son contrôle va mal se passer, il va paniquer puis perdre ses moyens avant même de commencer le test.
+                        </p>
+                        <p><b>3 types de stress : la fuite, la lutte et l'inhibition:</b></p>
+                        
+                            <ul class="types_stress">
+                            <li>La fuite : une personne agitée, je ne peux pas, je ne suis pas bien, ... </li>
+                            <li>La lutte : une attitude agressive, Quoi ?, Comment ?, ... </li>
+                            <li>L'inhibition : une attitude déprimée, force inertie, tu ne te rends pas compte ... </li> 
+                            </ul>
+                        <p>
+                            <b>Toutes les émotions influent sur nos capacités cognitives</b>. 
+                            Avec une bonne préparation et quelques rituels peuvent aider à gérer ses contres performances.  
+                            Comme le font les sportifs de haut niveau.
+                        </p>
+                        <p>Pour avoir plus d'informations, voici un lien vers une conférence : <a href="https://www.youtube.com/watch?v=V1ED6rDZDuE" target="_blank"> Comprendre notre grâce aux neurosciences</a> 
+                        </p>
+                    </div>
+                    <div class="séparation"></div>
+                </div>
+                <div class="partie_blanche">
+                    <h4>Les mécanismes de l'apprentissage</h4>
+                    <div class="illustration">
+                        <img src="images/mécanisme.png" alt="engrenage, image de pixabay" name="engrenage" id="engrenage">
+                    </div>
+                    <div class="texte">
+                        <p>Tout d'abord par <b>l'attention</b> est la <b>porte d'entrée des informations</b> que notre cerveau perçoit.</p>
+
+                        <p><a href="https://www.youtube.com/watch?v=9bDgpY37go4" target="_blank"> voici un test d'attention pour s'amuser</a> à tester votre capacité d'attention.</p> 
+
+                        <p><b>Les attracteurs</b> de l’attention sont le <b>sensoriel</b> (bruit, vision, contact…), les <b>émotions</b> (une personne en colère, qui pleure...), 
+                             la <b>nouveauté</b>, la <b>surprise</b>, les <b>motivations personnelles</b>.
+                             <br>
+                             La <b>capacité de l’attention</b> est de pouvoir <b>inhiber les informations non pertinentes</b> pendant <b>un long moment</b> afin de pouvoir maintenir l’attention sur le cours.
+                        </p>
+                       
+                       <p>En suite, la <b>mémoire de travail</b> permet de<b> maintenir l’information, la sélectionner et la manipuler</b> pendant un court instant 
+                            (la mémoire RAM d’un ordinateur si l’on peut dire). Cela demande beaucoup d'énergie est fait donc chute la capacité d'attention.
+                       </p>
+                       <p>
+                            L'étape suivante est la <b>gravure (encodage) de l'information</b> de manière consciente ou inconsciente. 
+                            Voici un lien pour en savoir plus :                 
+                            <a href="https://www.youtube.com/watch?v=tmDWlj4DDMI" target="_blank"> Les mécanismes cérébraux des apprentissages.</a>
+                        </p>
+                        <p>   La mémoire, c’est comme un trait que l’on trace dans notre cerveau. Plus on passe dessus mieux on s’en souvient.</p>
+                        
+                        <div class="espace"></div>
+                        <img src="images/trait_mémoire.png" alt="image de trait de plus en plus épais" width="400px" name="trait_mémoire" id="trait_mémoire" >
+                        <div class="espace"></div>
+                    </div>
+                    <div class="séparation"></div>
+                </div>
+
+                <div class="partie_blanche">
+                    <h4>La plasticité du cerveau</h4>
+                    <div class="illustration">
+                        <img src="images/piano.png" alt="un pianiste et une chanteuse, Image par Mohamed Hassan de Pixabay" name="piano" id="piano">
+                    </div>
+                    <div class="texte">
+                        <p>
+                            <br>
+                            À chaque fois que l'on apprend quelque chose de nouveau, notre cerveau crée de nouvelles liaisons (chemin).
+                            La neuroplasticité, c'est <b>la capacité du cerveau à se modifier et changer sa structure</b>.
+                        </p>
+                        <p>
+                        <b>Le cerveau peut se modifier à tous âges</b>. Par exemple, l'apprentissage d'un instrument de musique, d'un chant, d'un sport... 
+                        </p>
+                        <p>
+                            Autre exemple, lorsque l'on utilise un trajet quotidien, nous le faisons de manière automatique.
+                            Quand, soudain la route est fermée pour cause de travaux. Il faut donc changer de trajet pour arriver à notre destination.
+                            Il faut donc emprunter un nouveau chemin.
+                        </p>
+                        <p>
+                            Au début, on réfléchit et hésite au chemin que l'on doit prendre. 
+                            Puis, à force de parcourir ce nouveau trajet, on en prend l'habitude.
+                        </p>
+
+                        <p>
+                            En restant <b>actif </b>, on <b>favorise la neuroplasticité</b>. Il faut comparer notre cerveau<b> à un muscle</b>.
+                            Ainsi,  <b>la qualité et la quantité de sommeil </b>, <b>le repos </b>, boire de <b>l'eau</b>, <b>manger équilibre</b> 
+                            permettent de <b>maintenir nos fonctions cognitives</b> en bon état de fonctionnement.                        </p>
+                    </div>
+                    <div class="séparation"></div>
+                    
+                <div class="partie_blanche">
+                     <h4>L'importance du sommeil</h4>
+                    <div class="illustration">
+                      <img src="images/sleep.png" alt="une personne qui dort (Image par Htc Erl de Pixabay)" name="sleep" id="sleep">
+                    </div>                  
+                    <div class="texte">
+                        <p>
+                            C'est pendant le sommeil que l'on consolide les apprentissages.
+                            Le cerveau fait une sorte de <b>replay</b> de la journée.
+                            <br>
+                            Ensuite, <b>il trie les informations</b> et il supprime les savoirs qu'il estime inutiles.
+                            <br>
+                            Toutes perturbations ou manque de sommeil va donc freiner la mémorisation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        
+        </main>   
+
+         <!-- voici le pied pour la page <footer> -->
+        <footer>
+            &copy; Copyright Rios Marilyne, 2023
+            <p class="pixabay"><i>Je remercie le site Pixaby (ainsi que Gerd Altmann, Adrian, Stefan Schweihofer, Htc Erl, Pete Linforth, Mohamed Hassan,  ) pour les images qui ne sont pas de ma création.</i></p>
+        </footer>
+    </body>
+
+</html>

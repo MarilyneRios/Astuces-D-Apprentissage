@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Astuces d'apprentissage</title>
+
+        <!--UTF-8 est la norme d'encodage pour représenter les différentes langues, la plus utilisée-->
+         <!--meta est une balise clandistine donc fonctionne seule-->
+        <meta charset="UTF-8">
+
+         <!-- relier la page avec le fichier css -->
+         <link rel="stylesheet" type="text/css" href="css/style.css">
+
+         <!-- description pour le référencement<header> -->
+         <meta name="description" content="aide à l'apprentissage, carte mentale, pédagogique">
+
+          <!-- rajouter un petit icon en haut à gauche <header> -->
+         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+            <!-- importer des polices d'écriture de google font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- voici l'en-tête pour la page <header> -->
+        <header>
+
+            <!--<div> Ne fait rien, mais on peut emboîter des choses et y en ajouter-->
+            <div class="titre_box">
+
+                <!-- voici le Titre pour la page -->
+                <h1>Astuces d'apprentissage</h1>
+
+                <!-- voici le slogan pour la page -->
+                <p>Apprendre tout en douceur et en toute tranquillité.</p>
+            </div>
+
+            
+            <!-- div de mon slider d'images afin de récupere seulement cette partie pour le styliser -->
+            <div class="slider">
+
+                <!-- deiv des slides d'images -->
+              <div class="slides">
+
+                    <!-- mes images avec une div pour les séparer et la balise <img, src="" alt=""> -->
+                  <div class="slide"><img src="images\maths.jpg" alt="pythagore"></div>
+                  <div class="slide"><img src="images\map.jpg" alt="Les Méthodes de Travail"></div>
+                  <div class="slide"><img src="images\plan.jpg" alt="Les plans A_B_C"></div>
+                  <div class="slide"><img src="images\feu.jpg" alt="Le feu tricolre en smileys"></div>
+
+              </div>
+
+          </div>
+
+        </header>
+
+            <div class="section-menu">
+
+        <!--créer un menu de navigation-->
+            <nav class="menu">
+             <!--liste à puces-->
+                <ul>
+                    <li class ="nav-item accueil"><a href="index.html">Page<br>d'Accueil</a></li>
+                    <li class ="nav-item carte"><a href="carte.html">Carte<br>Mentale</a></li>
+                    <li class ="nav-item méthodes"><a href="Methodes.html">Méthodes <br>de Travail</a></li>
+                    <li class ="nav-item mécanismes"><a href="Cerveau.html">Notre<br>Cerveau</a></li>
+                </ul>
+            </nav>
+            </div>
+            
+        <main>
+            <section id="carte">
+            <!-- présentation d'une carte mentale-->
+             <h3>Qu'est-ce qu'une carte mentale ?</h3>
+                <br>
+                <div class="item">
+            
+                    <div class="description"><p><em>La carte mentale est <strong>un outil graphique</strong> qui permet<strong> d'organiser, de comprendre, de synthétiser et mémoriser</strong> ses idées sous la forme<strong> d'un schéma simplifié</strong>.</em> </p>
+                   
+                  <br>
+                    <p>Elle a été développée par Tony Buzan vers les années 1970.<br></p>
+                   <br>
+                   <p>Pour ceux qui veulent en savoir plus: <a href="https://www.encyclopaedia-universalis.fr/universalis-et-le-education/la-carte-mentale-un-outil-dune-grande-richesse-pedagogique/">encyclopaedia-universalis: la carte mentale</a>.</p>
+                   <br> 
+                   <p>Elle aide à <strong>visualiser les liens importants entre les divers chapitres</strong> de la leçon et à <strong>s'approprier les connaissances</strong>. 
+                    <br><br> De même, elle permet également d'être capable de <strong>ré-expliquer les connaissances</strong>, de <strong>faire des liens avec des notions déjà connu</strong> ainsi que d'y <strong>associer des images</strong>.</p>
+                    </div>
+                    <div class="carte-1">
+                    <img src="images/1.png" alt="exemple de carte mentale" width="400px">
+                    </div>
+                </div>
+            </section>
+
+            <section id="création">
+                
+            </section>
+
+        </main>   
+
+         <!-- voici le pied pour la page <footer> -->
+        <footer>
+            &copy; Copyright Rios Marilyne, 2023
+        </footer>
+    </body>
+
+</html>
