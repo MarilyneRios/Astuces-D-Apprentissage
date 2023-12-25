@@ -3,23 +3,17 @@
     <head>
         <title>Astuces d'apprentissage</title>
 
-        <!--UTF-8 est la norme d'encodage pour représenter les différentes langues, la plus utilisée-->
-         <!--meta est une balise clandistine donc fonctionne seule-->
         <meta charset="UTF-8">
 
-         <!-- relier la page avec le fichier css -->
          <link rel="stylesheet" type="text/css" href="css/styles.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-         <!-- description pour le référencement<header> -->
          <meta name="description" content="aide pour l'apprentissage des leçons et des diverse méthodes pour apprendre à apprendre, méthodologie pédagogique">
 
-         <!--pour adaptation mobile-->
          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-          <!-- rajouter un petit icon en haut à gauche <header> -->
          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-            <!-- importer des polices d'écriture de google font -->
          <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
@@ -27,27 +21,20 @@
     </head>
 
     <body>
-        <!-- voici l'en-tête pour la page <header> -->
         <header>
 
-            <!--<div> Ne fait rien, mais on peut emboîter des choses et y en ajouter-->
             <div class="titre_box">
 
-                <!-- voici le Titre pour la page -->
                 <h1>Astuces d'apprentissage</h1>
 
-                <!-- voici le slogan pour la page -->
                 <p>Apprendre tout en douceur et en toute tranquillité.</p>
             </div>
 
             
-            <!-- div de mon slider d'images afin de récupere seulement cette partie pour le styliser -->
             <div class="slider">
 
-                <!-- deiv des slides d'images -->
               <div class="slides">
 
-                    <!-- mes images avec une div pour les séparer et la balise <img, src="" alt=""> -->
                   <div class="slide"><img src="images\maths.jpg" alt="pythagore"></div>
                   <div class="slide"><img src="images\map.jpg" alt="Les Méthodes de Travail"></div>
                   <div class="slide"><img src="images\plan.jpg" alt="Les plans A_B_C"></div>
@@ -61,9 +48,8 @@
 
             <div class="section-menu">
 
-        <!--créer un menu de navigation-->
             <nav class="menu">
-             <!--liste à puces-->
+  
                 <ul>
                     <li class ="nav-item accueil"><a href="index.html">Page<br>d'Accueil</a></li>
                     <li class ="nav-item carte"><a href="carte.html">Carte<br>Mentale</a></li>
@@ -74,22 +60,25 @@
             </nav>
             </div>
 
-        <!--partie principale avec le contenu important du site-->    
         <main>
            
             <section class="leçons">
                  <div class ="partie_blanche">
-                    <!-- présentation du cerveau-->
+      
                    <h3>Voici différentes méthodes pour vous aider à mémoriser</h3>
-
+                   <a href="#prepaMentale" class="menu2"><h4>La préparation mentale</h4></a>
+                   <a href="#relire" class="menu2"><h4 >Avoir envie de relire et d'apprendre ses leçons</h4></a>
+                   <a href="#lire" class="menu2"><h4>Lire une consigne</h4></a>
+                   <a href="#autocorrection" class="menu2"><h4 >Protocoles d'autocorrections</h4></a>
+                   <a href="#production" class="menu2"><h4>Relire sa production</h4></a>
+                   <div class="séparation"></div>
                      <div class="illustration">
 
-                        <!--Toutes les cartes sont créer par moi-même-->
                        <img src="images/2.png" alt="carte mentale sur les 4 axes" name="carte_mental_methodes" id="carte_mental_methodes"> 
                      </div>
 
                      <div class="texte">
-                        <h4>La préparation mentale</h4>
+                        <h4 id="prepaMentale">La préparation mentale</h4>
 
                         <div class="illustration">
                              <img src="images/préparation_mentale.png" alt="preparation mentale" name="carte_mental_preparation_mentale" id="carte_mental_preparation_mentale">   
@@ -127,12 +116,15 @@
                              5&#x29; <b>S'imaginer réussir</b> ce que l'on va faire.
                         </p>
                      </div>
+                     <a href="#top" class="retour" alt="flèche retour en haut de page">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
                      <div class="séparation"></div>
                  </div>    
                              
 
                  <div class ="partie_blanche">
-                    <h4>Avoir envie de relire et d'apprendre ses leçons</h4>
+                  <h4 id="relire">Avoir envie de relire et d'apprendre ses leçons</h4>
                     <div class="illustration">
                         <img src="images/organiser_notes.png" alt="organiser_notes" name="organiser_notes" id="organiser_notes">   
                      </div>
@@ -146,10 +138,13 @@
                     <div class="illustration">
                         <img src="images/code_couleur.png" alt="code_couleur" name="code_couleur" id="code_couleur">   
                    </div> 
+                   <a href="#top" class="retour" alt="flèche retour en haut de page">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
                     <div class="séparation"></div>
                 </div>
                 <div class="partie_blanche">
-                    <h4>Lire une consigne</h4>
+                    <h4 id="lire">Lire une consigne</h4>
 
                     <div class="illustration">
                         <img src="images/lire_consigne.png" alt="lire_consigne" name="lire_consigne" id="lire_consigne">
@@ -188,17 +183,20 @@
                                                                 
                         <div class="espace"></div>
                     </div>
+                    <a href="#top" class="retour" alt="flèche retour en haut de page">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
                     <div class="séparation"></div>
                 </div>
 
                 <div class="partie_blanche">
-                    <h4>Protocoles d'autocorrections</h4>
+                    <h4 id="autocorrection">Protocoles d'autocorrections</h4>
                     <div class="illustration">
                         <img src="images/autocorrection.png" alt="carte mentale sur l'autocorrection" name="carte_mental_autocorrection" id="carte_mental_autocorrection">
                     </div>
                     <div class="texte">
 
-                        <h4>Relire sa production</h4>
+                        <h4 id="production">Relire sa production</h4>
 
                         <div class="illustration">
                             <img src="images/protocole_autocorrection.png" alt=" protocole_autocorrection" name="protocole_autocorrection" id="protocole_autocorrection">
@@ -234,13 +232,15 @@
                     </div>
 
                     <div class="espace"></div>
+                    <a href="#top" class="retour" alt="flèche retour en haut de page">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
                     <div class="séparation"></div>
                                   
             </section>
         
         </main>   
 
-         <!-- voici le pied pour la page <footer> -->
         <footer>
             &copy; Copyright Rios Marilyne, 2023
             <p class="pixabay"><i>Je remercie le site Pixaby (ainsi que Gerd Altmann, Adrian, Stefan Schweihofer) pour les images qui ne sont pas de ma création.</i></p>

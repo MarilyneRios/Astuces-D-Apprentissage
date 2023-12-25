@@ -178,18 +178,21 @@ h3 {
   text-align: center;
   color: rgb(159, 10, 35);
   font-size: 26px;
+  padding-top: 1rem;
 }
 h4 {
   color: #033163;
   font-family: "DynaPuff", cursive;
   text-align: center;
   font-size: 20px;
+  padding-top: 1rem;
 }
 h5 {
   color: rgb(165, 13, 225);
   font-family: "DynaPuff", cursive;
   text-align: center;
   font-size: 20px;
+  padding-top: 1rem;
 }
 
 b {
@@ -264,6 +267,35 @@ input {
   color: blue;
 }
 
+.menu2{
+  text-decoration: none;
+}
+.menu2:hover{
+  transform: scale(1.4);
+}
+
+.fa-arrow-up{
+font-size: 20px;
+color: #033163;
+
+}
+
+.retour {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #033163;
+  text-align: center;
+  padding-top: 3px;
+  cursor: pointer;
+  margin-left: 95%;
+  margin-bottom: 2px;
+}
+
+.retour:hover{
+  background-color: #6facec;
+  transform: scale(1.4);
+}
 /*CSS pour la page cerveau*/
 
 #cerveau {
@@ -423,6 +455,15 @@ code {
 #présenter_document:hover {
   transform: scale(1.5);
   transition: 0.3s all;
+}
+
+#qcm_app{
+  width: 25rem;
+  height: 15rem;
+}
+
+#qcm_app:hover{
+  transform: scale(1.5);
 }
 /*style tableau maths*/
 caption {
