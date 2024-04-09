@@ -3,11 +3,8 @@
     <head>
         <title>Astuces d'apprentissage</title>
 
-        <!--UTF-8 est la norme d'encodage pour représenter les différentes langues, la plus utilisée-->
-         <!--meta est une balise clandistine donc fonctionne seule-->
         <meta charset="UTF-8">
 
-         <!-- relier la page avec le fichier css -->
          <link rel="stylesheet" type="text/css" href="css/styles.css">
 
          <!-- description pour le référencement<header> -->
@@ -27,27 +24,20 @@
     </head>
 
     <body>
-        <!-- voici l'en-tête pour la page <header> -->
+ 
         <header>
 
-            <!--<div> Ne fait rien, mais on peut emboîter des choses et y en ajouter-->
-            <div class="titre_box">
+                <div class="titre_box">
 
-                <!-- voici le Titre pour la page -->
                 <h1>Astuces d'apprentissage</h1>
 
-                <!-- voici le slogan pour la page -->
                 <p>Apprendre tout en douceur et en toute tranquillité.</p>
             </div>
 
-            
-            <!-- div de mon slider d'images afin de récupere seulement cette partie pour le styliser -->
             <div class="slider">
 
-                <!-- deiv des slides d'images -->
               <div class="slides">
 
-                    <!-- mes images avec une div pour les séparer et la balise <img, src="" alt=""> -->
                   <div class="slide"><img src="images\maths.jpg" alt="pythagore,Image par Gerd Altmann de Pixabay"></div>
                   <div class="slide"><img src="images\map.jpg" alt="Les Méthodes de Travail,Image par Gerd Altmann  de pixabay"></div>
                   <div class="slide"><img src="images\plan.jpg" alt="Les plans A_B_C,Image par Gerd Altmann de Pixabay"></div>
@@ -61,38 +51,38 @@
 
             <div class="section-menu">
 
-        <!--créer un menu de navigation-->
             <nav class="menu">
-             <!--liste à puces-->
                 <ul>
-                    <li class ="nav-item accueil"><a href="index.html" alt="Image par Stefan Schweihofer de Pixabay">Page<br>d'Accueil</a></li>
-                    <li class ="nav-item carte"><a href="carte.html">Carte<br>Mentale</a></li>
-                    <li class ="nav-item méthodes"><a href="Methodes.html">Méthodes <br>de Travail</a></li>
-                    <li class ="nav-item mécanismes"><a href="Cerveau.html">Notre<br>Cerveau</a></li>
-                    <li class ="nav-item mécanismes"><a href="Autres_Astuces.html">Autres<br>Astuces </a></li>
+                    <li class ="nav-item accueil"><a class="nav-link"  href="index.html" alt="Image par Stefan Schweihofer de Pixabay">Page<br>d'Accueil</a></li>
+                    <li class ="nav-item carte"><a class="nav-link" href="carte.html">Carte<br>Mentale</a></li>
+                    <li class ="nav-item méthodes"><a class="nav-link" href="Methodes.html">Méthodes <br>de Travail</a></li>
+                    <li class ="nav-item mécanismes"><a class="nav-link" href="Cerveau.html">Notre<br>Cerveau</a></li>
+                    <li class ="nav-item mécanismes"><a class="nav-link" href="Autres_Astuces.html">Autres<br>Astuces </a></li>
                 </ul>
             </nav>
             </div>
 
-        <!--partie principale avec le contenu important du site-->    
         <main>
            
-                 <div class ="partie_blanche">
-                    <p>Sur ce site, vous allez apprendre à <strong>créer des cartes mentales</strong> afin de vous aider à mémoriser vos leçons.
-                         <br>
-                     Vous allez comprendre <strong>l'importance de les réaliser vous-même </strong> afin qu'elle soit <strong>adaptées à vos leçons et à vos connaissances.</strong>
-                        <br><br>
-                     Ainsi que <strong>des méthodes de travail</strong> pour devenir <strong>plus performant</strong> dans vos apprentissage.
-                        <br><br>
-                    Découvrir l'importance de faire les leins entre les différentes matières.
-                        <br><br>
-                     Enfin, vous découvriez <strong>les principes fondamentaux des mécanismes de l'apprentissage de notre cerveau</strong>.</p>
-                 </div> 
+            <div class ="partie_blanche">
+                <p>Sur ce site, vous allez apprendre à <strong>créer des cartes mentales</strong> afin de vous aider à mémoriser vos leçons.
+                    <br>
+                    Vous allez comprendre <strong>l'importance de les réaliser vous-même </strong> afin qu'elles soient <strong>adaptées à vos leçons et à vos connaissances.</strong>
+                    <br><br>
+                    Ainsi que <strong>des méthodes de travail</strong> pour devenir <strong>plus performant</strong> dans vos apprentissages.
+                    <br><br>
+                    Découvrir l'importance de faire les liens entre les différentes matières.
+                    <br><br>
+                    Quelques applications pratiques sont présentées dans autres astuces afin d'aider dans la méthodologie.
+                    <br><br>
+                    Enfin, vous découvrirez <strong>les principes fondamentaux des mécanismes de l'apprentissage de notre cerveau</strong>.
+                </p>
+            </div>
+            
         
 
         </main>   
 
-         <!-- voici le pied pour la page <footer> -->
         <footer>
             &copy; Copyright Rios Marilyne, 2023
             <p class="pixabay"><i>Je remercie le site Pixaby (ainsi que Gerd Altmann, Adrian, Stefan Schweihofer) pour les images qui ne sont pas de ma création.</i></p>
