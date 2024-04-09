@@ -449,16 +449,33 @@ code {
   transition: 0.3s all;
 }
 
-#qcm_app{
+#decompositiondexercices{
   width: 25rem;
   height: 15rem;
   border-radius: 15px;
-  margin:  auto 1rem;
+  display: block; 
+    margin:  auto;
+  transition: transform 0.3s ease; 
+}
+  
+#decompositiondexercices:hover{
+  transform: scale(1.3);
 }
 
-#qcm_app:hover{
-  transform: scale(1.5);
+#qcm{
+  width: 25rem;
+  height: 15rem;
+  border-radius: 15px;
+  display: block; 
+  margin:  auto;
+  transition: transform 0.3s ease; 
 }
+
+
+#qcm:hover{
+  transform: scale(1.3);
+}
+
 /*style tableau maths*/
 caption {
   color: blue;
@@ -542,7 +559,7 @@ th {
     color: #fff; 
     transform: scale(1.05);
   }
-
+ /*lien du 2e menu*/
   .menu2:hover h4 {
     transform: scale(0.9) !important;
     transition: transform 0.3s ease;
@@ -552,12 +569,48 @@ th {
     transform: scale(0.9) !important;
     transition: transform 0.3s ease;
   }
-  #qcm_app{
+  /*autres asctuces*/
+  #decompositiondexercices{
     width: 15rem;
     height: 10rem;
+    display: block; 
+    margin:  auto;
+    transition: transform 0.3s ease; 
   }
-  
-  #qcm_app:hover{
+    
+  #decompositiondexercices:hover{
     transform: scale(0.9);
+  }
+
+  #qcm{
+    width: 15rem;
+    height: 10rem;
+    display: block; 
+    margin:  auto;
+    transition: transform 0.3s ease; 
+  }
+
+
+  #qcm:hover{
+    transform: scale(0.9);
+  }
+
+
+  .partie_blanche {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  p, .blue {
+    font-size: 14px;
+  }
+
+  .tableau_maths {
+    width: 100%;
+    font-size: 12px;
   }
 }
