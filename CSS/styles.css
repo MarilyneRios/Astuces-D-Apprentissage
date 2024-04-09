@@ -255,8 +255,15 @@ input {
 .menu2{
   text-decoration: none;
 }
-.menu2:hover{
-  transform: scale(1.4);
+
+.menu2:hover h4 {
+  transform: scale(1.2) !important;
+  transition: transform 0.3s ease;
+}
+
+.menu2:hover h5 {
+  transform: scale(1.2) !important;
+  transition: transform 0.3s ease;
 }
 
 .fa-arrow-up{
@@ -534,7 +541,13 @@ th {
     transform: scale(1.05);
   }
 
-  .menu2:hover{
-    transform: scale(1.1);
+  .menu2:hover h4 {
+    transform: scale(1.1) !important;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu2:hover h5 {
+    transform: scale(1.1) !important;
+    transition: transform 0.3s ease;
   }
 }
