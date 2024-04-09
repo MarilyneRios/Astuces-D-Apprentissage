@@ -609,8 +609,14 @@ th {
     font-size: 14px;
   }
 
-  .tableau_maths {
-    width: 100%;
-    font-size: 12px;
-  }
+/*tableau */
+.tableau_maths {
+  width: 100%;
+  font-size: 14px; 
+}
+
+.tableau_maths th, .tableau_maths td {
+  padding: 5px; 
+}
+
 }
