@@ -452,6 +452,8 @@ code {
 #qcm_app{
   width: 25rem;
   height: 15rem;
+  border-radius: 15px;
+  margin:  auto 1rem;
 }
 
 #qcm_app:hover{
@@ -549,5 +551,13 @@ th {
   .menu2:hover h5 {
     transform: scale(1.1) !important;
     transition: transform 0.3s ease;
+  }
+  #qcm_app{
+    width: 20rem;
+    height: 10rem;
+  }
+  
+  #qcm_app:hover{
+    transform: scale(1.1);
   }
 }
