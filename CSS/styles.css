@@ -544,20 +544,20 @@ th {
   }
 
   .menu2:hover h4 {
-    transform: scale(1.1) !important;
+    transform: scale(0.9) !important;
     transition: transform 0.3s ease;
   }
   
   .menu2:hover h5 {
-    transform: scale(1.1) !important;
+    transform: scale(0.9) !important;
     transition: transform 0.3s ease;
   }
   #qcm_app{
-    width: 20rem;
+    width: 15rem;
     height: 10rem;
   }
   
   #qcm_app:hover{
-    transform: scale(1.1);
+    transform: scale(0.9);
   }
 }
